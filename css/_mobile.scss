@@ -1,0 +1,95 @@
+//1025px
+@include mediaLG{
+
+}
+//769px
+@include mediaMd{
+  .row{
+    padding: 80px 0;
+  }
+  #home .container h1{
+    font-size: 2.8rem;
+  }
+  #home .container h4{
+    font-size: 1.4rem;
+  }
+  .client-row{
+    margin-bottom: 40px;
+    .word::before{
+      left: 5px;
+    }
+    .client-words{
+      padding: 32px 20px 20px 60px;
+    }
+  }
+  #footer .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .quick-links, .copyright{
+      margin-bottom: 40px;
+    }
+    .quick-links{
+      ul{
+        justify-content: center;
+      }
+    }
+  }
+}
+//669px
+@include mediaMdS{
+  .client-row{
+    margin-bottom: 20px;
+  }
+  .client-row .client-words{
+    flex: 0 0 100%;
+    margin-bottom: 20px
+  }
+  .client-row .client-words:last-child{
+    margin-bottom: 0px;
+  }
+  .client-row:last-child .client-words{
+    flex: 0 0 100%;
+    order: 1;
+  }
+}
+//500px
+@include mediaMdSS{
+  .main-banner{
+    padding: 8rem 0;
+  }
+  #home .container h1{
+    font-size: 2rem;
+  }
+  #home .container h4{
+    font-size: 1.2rem;
+  }
+}
+//460px
+@include mediaSm{
+  #home .container h1{
+    font-size: 1.8rem;
+  }
+  .sub-header{
+    margin-bottom: 40px;
+  }
+  .sub-header, .cta-header{
+    font-size: 1.7rem;
+  }
+  .grid-showcase{
+    grid-gap: 20px;
+  }
+  .grid-showcase .feature .feature-details{
+    padding: 0 0px 0px 10px;
+  }
+  .client-row .client-words{
+    padding: 20px 10px 10px 40px;
+  }
+  .client-row .word::before{
+    font-size: 4.5em;
+  }
+}
+//376px
+@include mediaSx{
+  
+}

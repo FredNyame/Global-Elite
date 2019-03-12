@@ -1,0 +1,58 @@
+.testimonial{
+  background-image: linear-gradient(top right,rgba(0,0,0,0.5), rgba(53, 53,49, 0.6)), url(../asserts/images/review-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0;
+  color: $primary;
+}
+.client-row{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 70px;
+  .client-words{
+    position: relative;
+    flex: 0 0 50%;
+    order: 1;
+    padding: 32px 46px 20px 86px;
+    .person{
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .company, .place{
+      font-weight: 300;
+    }
+  }
+  .bg-color{
+    background: $linkColor;
+    order: 2;
+    border-radius: 2px;
+  }
+  .word{
+    display: inline-block;
+    quotes: "“" "\201D";
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    &::before{
+      position: absolute;
+      content: open-quote;
+      //font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 7em;
+      font-weight: 600;
+      top: -10px;
+      left: 22px;
+    }
+  }
+}
+
+.client-row:last-child{
+  .client-words{
+    flex: 0 0 50%;
+    order: 2;
+  }
+  .bg-color{
+    background: $linkColor;
+    order: 1;
+  }
+}

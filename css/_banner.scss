@@ -1,0 +1,29 @@
+.main-banner{
+  width: 100%;
+  padding: 10rem 0;
+  background-size: cover;
+  background-position: center 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  .container {
+    text-align: center;
+  }
+}
+#home{
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url('../asserts/images/home.jpg');
+  .container{
+    h1, h4{
+      color: $primary;
+    }
+    h1{
+      font-size: 3.125rem;
+      margin-bottom: 15px;
+    }
+    h4{
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.625rem;
+      font-weight: 400;
+      margin-bottom: 45px;
+    }
+  }
+}

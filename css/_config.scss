@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+//Fonts
+body,html{
+  font-family: 'Poppins', sans-serif;
+}
+
+//Header tags
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+//variables
+$primary: #fff;
+$btnBgColor: #F01D1D;
+$hTagsColor: #0A0908;
+$greySecColor: #F6F6F7;
+$featureTitleColor: #353531;
+$pColor: #9A9A9A;
+$linkColor: #30C7C3;
+$footerColor: #000000;
+
+//Layouts
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.row{
+  padding: 120px 0;
+}
+.feature-color{
+  background-color: $greySecColor;
+}
+/*Sub heading styling*/
+.sub-header, .cta-header{
+  font-size: 2rem;
+}
+.sub-header{
+  text-align: center;
+  margin-bottom: 70px;
+}
+/*CTA header styling*/
+.cta-header{
+  margin-bottom: 20px;
+}
+.col-12{
+  flex: 0 0 100%;
+}
+.col-6{
+  flex: 0 0 50%;
+}
+.center{
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+
+img{
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* Mobile Breakpoints */
+//Landscape
+@mixin mediaLG {
+  @media screen and (max-width: 1025px){
+    @content;
+  }
+}
+//Tablet
+@mixin mediaMd {
+  @media screen and (max-width: 769px){
+    @content;
+  }
+}
+@mixin mediaMdS {
+  @media screen and (max-width: 669px){
+    @content;
+  }
+}
+@mixin mediaMdSS {
+  @media screen and (max-width: 500px){
+    @content;
+  }
+}
+//iphone smartphones
+@mixin mediaSm {
+  @media screen and (max-width: 460px){
+    @content;
+  }
+}
+//Samll smartphones
+@mixin mediaSx {
+  @media screen and (max-width: 376px){
+    @content;
+  }
+}
