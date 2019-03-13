@@ -23,6 +23,9 @@
         font-size: 1.7rem;
         padding-right: 10px;
       }
+      &:hover{
+        color: $greySecColor;
+      }
     }
     .icon-menu{
       p, a{

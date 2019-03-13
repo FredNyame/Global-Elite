@@ -114,6 +114,10 @@ img {
   padding-right: 10px;
 }
 
+#nav #main-nav #close:hover {
+  color: #F6F6F7;
+}
+
 #nav #main-nav .icon-menu p, #nav #main-nav .icon-menu a {
   font-size: 1.2rem;
   color: #F6F6F7;
