@@ -92,9 +92,9 @@ img {
   width: 300px;
   padding: 20px;
   top: 0;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  opacity: 1;
+  -webkit-transform: translateX(-310px);
+          transform: translateX(-310px);
+  opacity: 0;
   height: 100vh;
   background-image: linear-gradient(45deg, #2FE0C4, #30C7C3);
   z-index: 2;
@@ -157,6 +157,12 @@ img {
   width: 100%;
 }
 
+#nav #main-nav.show {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  opacity: 1;
+}
+
 #nav .nav-items {
   width: 100%;
   display: -webkit-box;
@@ -172,11 +178,11 @@ img {
 
 #nav .nav-items #menu-bar {
   width: 30%;
-  cursor: pointer;
 }
 
 #nav .nav-items #menu-bar svg {
   width: 25px;
+  cursor: pointer;
 }
 
 #nav .nav-items #menu-bar svg:hover {
@@ -222,7 +228,6 @@ img {
   padding: 10rem 0;
   background-size: cover;
   background-position: center 0;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
@@ -360,11 +365,11 @@ img {
 }
 
 .testimonial {
-  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(53, 53, 49, 0.6))), url(../asserts/images/review-bg.jpg);
-  background-image: linear-gradient(top right, rgba(0, 0, 0, 0.5), rgba(53, 53, 49, 0.6)), url(../asserts/images/review-bg.jpg);
+  background-image: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(53, 53, 49, 0.6))), url(../asserts/images/porsche.jpg);
+  background-image: linear-gradient(top right, rgba(0, 0, 0, 0.5), rgba(53, 53, 49, 0.6)), url(../asserts/images/porsche.jpg);
+  background-color: #F6F6F7;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center 0;
   color: #fff;
 }

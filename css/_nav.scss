@@ -8,8 +8,8 @@
     width: 300px;
     padding: 20px;
     top: 0;
-    transform: translateX(0px);
-    opacity: 1;
+    transform: translateX(-310px);
+    opacity: 0;
     height: 100vh;
     background-image: linear-gradient(45deg, #2FE0C4,#30C7C3);
     z-index: 2;
@@ -61,6 +61,10 @@
       }
     }
   }
+  #main-nav.show{
+    transform: translateX(0px);
+    opacity: 1;
+  }
   //main nav styling
   .nav-items{
     width: 100%;
@@ -70,12 +74,13 @@
     //menubar styling
     #menu-bar{
       width: 30%;
-      cursor: pointer;
+      //cursor: pointer;
       svg{
         width: 25px;
         &:hover{
           fill: $linkColor;
         }
+        cursor: pointer;
       }
     }
     //logo styling
