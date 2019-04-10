@@ -9,13 +9,13 @@
   function calculateYPos(OldMin, OldMax, newMin, newMax, OldValue){
     let OldRange = OldMax - OldMin;
     let newRange = newMax - newMin;
-    return((OldValue - OldMin) * newRange/OldRange) + newMin;
+    return((OldValue - OldMin) * newRange / OldRange) + newMin;
   } 
 
  //function to parallax the background images
   function moveSlide(){
     //get the current scrollBar position
-    let scrollPos = window.scrollY || document.body.scrollTop;
+    let scrollPos = window.scrollY || document.body.scrollTop || document.documentElement.scrollTop;
     //loop through the images
     allImages.forEach((image) => {
       //check if the scrollBar plus half size of the window height has passed the offsetTop of the image

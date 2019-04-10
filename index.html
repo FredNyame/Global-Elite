@@ -15,10 +15,10 @@
   <nav id="nav">
     <ul id="main-nav">
       <li id="close"><i class="fas fa-times"></i>Close</li>
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="#">Services</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li class="icon-menu phone-menu"><p><i class="fas fa-phone"></i>716-212-4567</p></li>
       <li class="icon-menu"><a href="#"><i class="fas fa-envelope"></i>info@gmail.com</a></li>
     </ul>
@@ -50,7 +50,7 @@
     <div class="container">
       <h1>Shipping made easy for you</h1>
       <h4>We pick up and deliver to your door step</h4>
-      <a href="#" class="btn btn-color">Pick my item</a>
+      <a href="pickitem.html" class="btn btn-color">Pick my item</a>
     </div>
   </header>
   <!--End of Banner Section-->
@@ -67,8 +67,8 @@
             </div>
             <div class="feature-details">
               <h3>Pickup</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi officia exercitationem suscipit aut reiciendis</p>
-              <a href="#" class="feature-link">Learn more</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <a href="#" class="feature-link green-text">Learn more</a>
             </div>
           </div>
           <div class="feature">
@@ -77,8 +77,8 @@
             </div>
             <div class="feature-details">
               <h3>Packaging</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi officia exercitationem suscipit aut reiciendis</p>
-              <a href="#" class="feature-link">Learn more</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <a href="#" class="feature-link green-text">Learn more</a>
             </div>
           </div>
           <div class="feature">
@@ -87,8 +87,8 @@
             </div>
             <div class="feature-details">
               <h3>Delivery</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi officia exercitationem suscipit aut reiciendis</p>
-              <a href="#" class="feature-link">Learn more</a>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <a href="#" class="feature-link green-text">Learn more</a>
             </div>
           </div>
         </div>
@@ -147,24 +147,24 @@
       <div class="container">
         <h2 class="sub-header">Our Areas of Service</h2>
       </div>
-      <div><img src="" alt=""></div>
+      <div id="map"><!--Js Maps go here-->></div>
     </section>
     <!--End of Services Area-->
   </main>
   <!--Start of footer-->
-  <footer id='footer'>
+  <footer id='footer' class="green-bck">
     <div class="container">
       <div class="quick-links">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#" class="white-text">About</a></li>
+          <li><a href="contact.html" class="white-text">Contact</a></li>
+          <li><a href="#" class="white-text">Services</a></li>
         </ul>
       </div>
-      <div class="copyright center">
+      <div class="copyright center white-text">
         &copy 2019 Shipping Co Inc.
       </div>
-      <div class="built right">
+      <div class="built right white-text">
         <p>Designed & Powered by <span class="built-color">Fred Nyame</span></p>
       </div>
     </div>
@@ -172,5 +172,8 @@
   <!--End of footer-->
   <script src="asserts/js/nav.js"></script>
   <script src="asserts/js/parrallax.js"></script>
+  <script src="asserts/js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpKsV3sW0UmjU4nqgpOjBCijIyL87NPas&callback=initMap"
+async defer></script>
 </body>
 </html>

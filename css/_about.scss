@@ -1,0 +1,49 @@
+/*Styling for the about page*/
+.about-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+}
+.about-us-wrapper{
+  flex-basis: 50%;
+  .about-info{
+    margin-bottom: 50px;
+    h4{
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    p{
+      //font-size: 18px;
+      color: #9A9A9A;
+    }
+  }
+}
+.about-team{
+  flex-basis: 50%;
+  text-align: center;
+  h4{
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .team-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    div{
+      width: 295px;
+      height: 295px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .team-name{
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p{
+      font-size: 18px;
+      color: #9A9A9A;
+    }
+  }
+}

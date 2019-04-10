@@ -1,3 +1,14 @@
+//1440px
+@include mediaXL{
+  #nav #main-nav{
+    width: 30%;
+    padding: 60px;
+    max-width: none;
+  }
+  #nav #main-nav li{
+    margin-top: 40px;
+  }
+}
 //1025px
 @include mediaLG{
 
@@ -62,19 +73,19 @@
     font-size: 2rem;
   }
   #home .container h4{
-    font-size: 1.2rem;
+    font-size: 1.125rem;
   }
 }
 //460px
 @include mediaSm{
   #home .container h1{
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
   .sub-header{
     margin-bottom: 40px;
   }
   .sub-header, .cta-header{
-    font-size: 1.7rem;
+    font-size: 1.75rem;
   }
   .grid-showcase{
     grid-gap: 20px;

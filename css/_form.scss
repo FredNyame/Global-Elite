@@ -1,0 +1,168 @@
+.info-wrap, .form-wrap{
+  max-width: 846px;
+  width: 100%;
+  margin: 0 auto;
+}
+//error message color
+.error-message{
+  color: red;
+  transition: all 0.5s;
+  font-size: 1rem;
+  font-style: italic;
+}
+.info-wrap{
+  font-size: 1.25rem;
+  line-height: 1.7;
+  .info-main{
+    margin-bottom: 3rem;
+  }
+}
+.form-wrap{
+  margin-top: 5rem;
+  font-size: 1.125rem;
+  form{
+    width: 100%;
+    padding: 0 1.25rem;
+    transition: all 0.5s;
+  
+    .field-wrap{
+      position: relative;
+      width: 100%;
+      margin-bottom: 3.75rem;
+      font-family: 'Montserrat', sans-serif;
+      .textarea{
+        position: relative;
+        .fa-check, .fa-times{
+          position: absolute;
+          top: 80%;
+          right: 10px;
+        }
+      }
+      .fa-check{
+        opacity: 0;
+        color: $greenBck;
+        &.showCheckIcon{
+          opacity: 1;
+        }
+      }
+      .fa-times{
+        opacity: 0;
+        color: red;
+        &.showTimesIcon{
+          opacity: 1;
+        }
+      }
+      .fa-check, .fa-times{
+        position: absolute;
+        top: 60%;
+        right: 10px;
+        transition: opacity 0.5s;
+      }
+      label{
+        display: inline-block;
+        margin: 0px 40px 10px 0px;
+        font-weight: 500;
+      }
+      input, textarea, select{
+        width: 100%;
+        font-size: 1rem;
+        border: 1px solid white;
+        border-radius: 2px;
+        padding: 1rem 14px;
+        transition: all 0.5s;
+      }
+      input:focus, textarea:focus{
+        color: #333;
+        border-color: $greenBck;
+        box-shadow: 0 0 8px 0 $greenBck;
+      }
+      .textarea-desc{
+        margin-bottom: 30px;
+      }
+      .textarea-desc h4{
+        margin-bottom: 10px;
+      }
+      .textarea-desc p {
+        line-height: 1.6;
+      }
+      input[type='date']{
+        height: 45px;
+        padding: 12px;
+      }
+    }
+    .split-wrap{
+      display: flex;
+      justify-content: space-between;
+      .split-field{
+        position: relative;
+        max-width: 370px;
+        width: 100%;
+      }
+      .split-field-three{
+        position: relative;
+        max-width: 238px;
+        width: 100%;
+      }
+      .split-field, .split-field-three{
+        .fa-check{
+          opacity: 0;
+          &.showCheckIcon{
+            opacity: 1;
+          }
+        }
+        .fa-times{
+          opacity: 0;
+          &.showTimesIcon{
+            opacity: 1;
+          }
+        }
+        .fa-check, .fa-times{
+          position: absolute;
+          top: 60%;
+          right: 10px;
+          &.showIcon{
+            opacity: 1;
+          }
+        }
+        select{
+          width: 100%;
+          height: 50px;
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.quick-wrap{
+  display: flex;
+  .quick-info-sec{
+    flex-basis: 50%;
+    background: $greenBck;
+    min-height: 500px;
+    .container{
+     text-align: center;
+     color: $primary;
+      .quick-p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-top: 9rem;
+        margin-bottom: 2rem;
+      }
+      .quick-tel-email{
+        font-size: 1.125rem;
+        line-height: 1.6;
+        a{
+          color: $primary;
+        }
+        i{
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .quick-map{
+    flex-basis: 50%;
+  }
+}

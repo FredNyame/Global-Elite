@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+*:focus{
+  outline: none;
+}
 
 //Fonts
 body,html{
@@ -25,7 +28,9 @@ $hTagsColor: #0A0908;
 $greySecColor: #F6F6F7;
 $featureTitleColor: #353531;
 $pColor: #9A9A9A;
+$mainPColor: #333;
 $linkColor: #30C7C3;
+$greenBck: #2FE0C4;
 $footerColor: #000000;
 
 //Layouts
@@ -38,8 +43,23 @@ $footerColor: #000000;
 .row{
   padding: 120px 0;
 }
+.row-wrap{
+  padding: 100px 0;
+}
 .feature-color{
   background-color: $greySecColor;
+}
+.green-bck{
+  background-color: $greenBck;
+}
+.white-text{
+  color: $primary;
+}
+.green-text{
+  color: $linkColor;
+}
+.p-text{
+  color: $mainPColor;
 }
 /*Sub heading styling*/
 .sub-header, .cta-header{
@@ -75,6 +95,12 @@ img{
 }
 
 /* Mobile Breakpoints */
+@mixin mediaXL {
+  @media screen and (min-width: 1441px){
+    @content;
+  }
+}
+
 //Landscape
 @mixin mediaLG {
   @media screen and (max-width: 1025px){

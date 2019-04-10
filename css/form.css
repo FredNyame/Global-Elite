@@ -1,0 +1,56 @@
+.info-wrap, .form-wrap {
+  max-width: 846px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info-wrap {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.info-wrap .info-main {
+  margin-bottom: 3rem;
+}
+
+.form-wrap {
+  margin-top: 5rem;
+  font-size: 1.125rem;
+}
+
+.form-wrap form {
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.form-wrap form .field-wrap {
+  width: 100%;
+  margin-bottom: 3.75rem;
+}
+
+.form-wrap form .field-wrap label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-wrap form .field-wrap input, .form-wrap form .field-wrap textarea {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.form-wrap form .split-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-wrap form .split-wrap .split-field {
+  max-width: 370px;
+  width: 100%;
+}
+/*# sourceMappingURL=form.css.map */
