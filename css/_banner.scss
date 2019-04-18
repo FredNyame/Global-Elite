@@ -10,7 +10,7 @@
 }
 
 /*styling for the index, contact, pickitem page*/ 
-#home, #contact, #pickitem{
+#home, #contact, #pickitem, #about{
   .container{
     h1{
       font-weight: 600;
@@ -20,23 +20,26 @@
     h4{
       font-family: 'Poppins', sans-serif;
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 45px;
     }
   }
 }
 
 /*styling for the index page*/ 
-#home, #contact, #pickitem{
+#home, #contact, #pickitem, #about{
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
 }
+
 #home{
-  background-image: linear-gradient(45deg, rgba(48,219,194,0.8), rgba(64,136,173,0.8)), url('../asserts/images/home.jpg');
+  background-image: url('../asserts/images/HomeScreen.png');
+  height: 500px;
 }
 
-#contact, #pickitem{
+#about, #contact, #pickitem{
+  height: 435px;
   .container{
     h4{
       margin-bottom: 0px;
@@ -46,11 +49,16 @@
 
 /*styling for the contact page*/ 
 #contact{
-  background-image: linear-gradient(45deg, rgba(48,219,194,0.8), rgba(64,136,173,0.8)), url('../asserts/images/home.jpg');
+  background-image: url('../asserts/images/ContactScreen.png');
  
 }
 
 /*styling for the pickitem page*/ 
 #pickitem{
-  background-image: linear-gradient(45deg, rgba(48,219,194,0.8), rgba(64,136,173,0.8)), url('../asserts/images/home.jpg');
+  background-image: url('../asserts/images/PickScreen.png');
+}
+
+/*Styling for the about page*/
+#about{
+  background-image: url('../asserts/images/AboutScreen.png');
 }

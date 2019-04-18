@@ -19,7 +19,7 @@
       <li><a href="#">Services</a></li>
       <li><a href="#">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li class="icon-menu phone-menu"><p><i class="fas fa-phone"></i>716-212-4567</p></li>
+      <li class="icon-menu phone-menu"><p><i class="fas fa-phone"></i>347-366-5468</p></li>
       <li class="icon-menu"><a href="#"><i class="fas fa-envelope"></i>info@gmail.com</a></li>
     </ul>
     <div class="container nav-items">
@@ -29,7 +29,7 @@
       </div>
       <div class="logo">
         <!--logo-->
-        <a href="index.html">Shipping Co Inc.</a>
+        <a href="index.html"><img src="./asserts/images/logoicon.png" alt="logoicon">Global Elite</a>
       </div>
       <div class="nav-social">
         <div class="social">
@@ -88,6 +88,11 @@
               </div>
           </div>
           <div class="field-wrap">
+            <div class="textarea-desc">
+              <h4>Pick up address</h4>
+            </div>
+          </div>
+          <div class="field-wrap">
             <label for="street">Address</label><i class="fas fa-check"></i><i class="fas fa-times"></i>
             <input type="text" name="street" id="street" placeholder="e.g 123 fenton avenue" required>
           </div>
@@ -98,58 +103,57 @@
               </div>
               <div class="split-field-three">
                 <label for="state">State</label><i class="fas fa-check"></i><i class="fas fa-times"></i>
-                <input list="state" name="state" id="state" placeholder="Select dropdown">
-                <datalist id="state">
-                  <option value="AL - Alabama">
-                  <option value="AK - Alaska">
-                  <option value="AZ - Arkansas">
-                  <option value="AR - Arkansas">
-                  <option value="CA - California">
-                  <option value="CO - Colorado">
-                  <option value="CT - Connecticut">
-                  <option value="DE - Delaware">
-                  <option value="FL - Florida">
-                  <option value="GA - Georgia">
-                  <option value="HI - Hawaii">
-                  <option value="ID - Idaho">
-                  <option value="IL - Illinois">
-                  <option value="IN - Indiana">
-                  <option value="IA - Iowa">
-                  <option value="KS - Kansas">
-                  <option value="KY - Kentucky">
-                  <option value="LA - Louisiana">
-                  <option value="ME - Maine">
-                  <option value="MD - Maryland">
-                  <option value="MA - Massachusetts">
-                  <option value="MI - Michigan">
-                  <option value="MN - Minnesota">
-                  <option value="MS - Mississippi">
-                  <option value="MS - Missouri">
-                  <option value="MT - Montana">
-                  <option value="NE - Nebraska">
-                  <option value="NV - Nevada">
-                  <option value="NH - New Hampshire">
-                  <option value="NJ - New Jersey">
-                  <option value="NM - New Mexico">
-                  <option value="NY - New York">
-                  <option value="NC - North Carolina">
-                  <option value="ND - North Dakota">
-                  <option value="OH - Ohio">
-                  <option value="OK - Oklahoma">
-                  <option value="OR - Oregon">
-                  <option value="PA - Pennsylvania">
-                  <option value="RI - Rhoda Island">
-                  <option value="SC - South Carolina">
-                  <option value="SD - South Dakota">
-                  <option value="TN - Tennessee">
-                  <option value="TX - Texas">
-                  <option value="UT - Utah">
-                  <option value="VT - Vermont">
-                  <option value="VA - Virginia">
-                  <option value="WA - Washington">
-                  <option value="WV - West Virginia">
-                  <option value="WI - Wisconsin">
-                </datalist>
+                <select name="state" id="state" required>
+                  <option value="AL - Alabama">AL - Alabama</option>
+                  <option value="AK - Alaska">AK - Alaska</option>
+                  <option value="AZ - Arkansas">AZ - Arkansas</option>
+                  <option value="AR - Arkansas">AR - Arkansas</option>
+                  <option value="CA - California">CA - California</option>
+                  <option value="CO - Colorado">CO - Colorado</option>
+                  <option value="CT - Connecticut">CT - Connecticut</option>
+                  <option value="DE - Delaware">DE - Delaware</option>
+                  <option value="FL - Florida">FL - Florida</option>
+                  <option value="GA - Georgia">GA - Georgia</option>
+                  <option value="HI - Hawaii">HI - Hawaii</option>
+                  <option value="ID - Idaho">ID - Idaho</option>
+                  <option value="IL - Illinois">IL - Illinois</option>
+                  <option value="IN - Indiana">IN - Indiana</option>
+                  <option value="IA - Iowa">IA - Iowa</option>
+                  <option value="KS - Kansas">KS - Kansas</option>
+                  <option value="KY - Kentucky">KY - Kentucky</option>
+                  <option value="LA - Louisiana">LA - Louisiana</option>
+                  <option value="ME - Maine">ME - Maine</option>
+                  <option value="MD - Maryland">MD - Maryland</option>
+                  <option value="MA - Massachusetts">MA - Massachusetts</option>
+                  <option value="MI - Michigan">MI - Michigan</option>
+                  <option value="MN - Minnesota">MN - Minnesota</option>
+                  <option value="MS - Mississippi">MS - Mississippi</option>
+                  <option value="MS - Missouri">MS - Missouri</option>
+                  <option value="MT - Montana">MT - Montana</option>
+                  <option value="NE - Nebraska">NE - Nebraska</option>
+                  <option value="NV - Nevada">NV - Nevada</option>
+                  <option value="NH - New Hampshire">NH - New Hampshire</option>
+                  <option value="NJ - New Jersey">NJ - New Jersey</option>
+                  <option value="NM - New Mexico">NM - New Mexico</option>
+                  <option value="NY - New York">NY - New York</option>
+                  <option value="NC - North Carolina">NC - North Carolina</option>
+                  <option value="ND - North Dakota">ND - North Dakota</option>
+                  <option value="OH - Ohio">OH - Ohio</option>
+                  <option value="OK - Oklahoma">OK - Oklahoma</option>
+                  <option value="OR - Oregon">OR - Oregon</option>
+                  <option value="PA - Pennsylvania">PA - Pennsylvania</option>
+                  <option value="RI - Rhoda Island">RI - Rhoda Island</option>
+                  <option value="SC - South Carolina">SC - South Carolina</option>
+                  <option value="SD - South Dakota">SD - South Dakota</option>
+                  <option value="TN - Tennessee">TN - Tennessee</option>
+                  <option value="TX - Texas">TX - Texas</option>
+                  <option value="UT - Utah">UT - Utah</option>
+                  <option value="VT - Vermont">VT - Vermont</option>
+                  <option value="VA - Virginia">VA - Virginia</option>
+                  <option value="WA - Washington">WA - Washington</option>
+                  <option value="WV - West Virginia">WV - West Virginia</option>
+                  <option value="WI - Wisconsin">WI - Wisconsin</option>
+                </select>
               </div>
               <div class="split-field-three">
                 <label for="zipcode">Zipcode</label><i class="fas fa-check"></i><i class="fas fa-times"></i>
