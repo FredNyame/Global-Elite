@@ -10,7 +10,7 @@
 }
 
 /*styling for the index, contact, pickitem page*/ 
-#home, #contact, #pickitem, #about{
+#home, #contact, #pickitem, #about, #service{
   .container{
     h1{
       font-weight: 600;
@@ -27,7 +27,7 @@
 }
 
 /*styling for the index page*/ 
-#home, #contact, #pickitem, #about{
+#home, #contact, #pickitem, #about, #service{
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@
   height: 500px;
 }
 
-#about, #contact, #pickitem{
+#about, #contact, #pickitem, #service{
   height: 435px;
   .container{
     h4{
@@ -61,4 +61,8 @@
 /*Styling for the about page*/
 #about{
   background-image: url('../asserts/images/AboutScreen.png');
+}
+
+#service{
+  background-image: url('../asserts/images/servicebanner.png');
 }

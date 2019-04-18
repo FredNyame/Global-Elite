@@ -262,13 +262,13 @@ img {
 }
 
 /*styling for the index, contact, pickitem page*/
-#home .container h1, #contact .container h1, #pickitem .container h1, #about .container h1 {
+#home .container h1, #contact .container h1, #pickitem .container h1, #about .container h1, #service .container h1 {
   font-weight: 600;
   font-size: 3.125rem;
   margin-bottom: 20px;
 }
 
-#home .container h4, #contact .container h4, #pickitem .container h4, #about .container h4 {
+#home .container h4, #contact .container h4, #pickitem .container h4, #about .container h4, #service .container h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -276,7 +276,7 @@ img {
 }
 
 /*styling for the index page*/
-#home, #contact, #pickitem, #about {
+#home, #contact, #pickitem, #about, #service {
   background-size: cover;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -287,11 +287,11 @@ img {
   height: 500px;
 }
 
-#about, #contact, #pickitem {
+#about, #contact, #pickitem, #service {
   height: 435px;
 }
 
-#about .container h4, #contact .container h4, #pickitem .container h4 {
+#about .container h4, #contact .container h4, #pickitem .container h4, #service .container h4 {
   margin-bottom: 0px;
 }
 
@@ -308,6 +308,10 @@ img {
 /*Styling for the about page*/
 #about {
   background-image: url("../asserts/images/AboutScreen.png");
+}
+
+#service {
+  background-image: url("../asserts/images/servicebanner.png");
 }
 
 .btn {
@@ -502,7 +506,7 @@ img {
 }
 
 /*Styling for the about page*/
-.about-wrapper {
+.about-wrapper, .service-main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,21 +516,30 @@ img {
           flex-flow: row wrap;
 }
 
-.about-us-wrapper {
+.about-us-wrapper, .service-info {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
 }
 
-.about-us-wrapper .about-info {
-  margin-bottom: 50px;
-}
-
-.about-us-wrapper .about-info h4 {
+.about-us-wrapper h4, .service-info h4 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-.about-us-wrapper .about-info p {
+.about-us-wrapper p, .service-info p {
+  color: #9A9A9A;
+}
+
+.about-us-wrapper .about-info, .service-info .about-info {
+  margin-bottom: 50px;
+}
+
+.about-us-wrapper .about-info h4, .service-info .about-info h4 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.about-us-wrapper .about-info p, .service-info .about-info p {
   color: #9A9A9A;
 }
 
@@ -572,6 +585,51 @@ img {
 .about-team .team-member p {
   font-size: 18px;
   color: #9A9A9A;
+}
+
+/*Service styling*/
+.service-main-wrapper {
+  margin-bottom: 50px;
+}
+
+.service-main-wrapper .service-info {
+  margin-bottom: 0px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.service-main-wrapper .service-icon-wrapper {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.service-main-wrapper:nth-child(even) .service-info {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.service-main-wrapper:nth-child(even) .service-icon-wrapper {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media screen and (min-width: 1441px) {
